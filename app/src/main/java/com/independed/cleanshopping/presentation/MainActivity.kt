@@ -1,7 +1,8 @@
-package com.independed.cleanshopping
+package com.independed.cleanshopping.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.independed.cleanshopping.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
