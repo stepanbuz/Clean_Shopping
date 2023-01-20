@@ -1,8 +1,10 @@
 package com.independed.cleanshopping.domain
 
-class GetItemUseCase {
+import com.independed.cleanshopping.`interface`.ShoppingListRepository
+
+class GetItemUseCase(private val shoppingListRepository: ShoppingListRepository) {
 
     fun getItem(shopItem: ShopItem){
-        TODO()
+        shoppingListRepository.getItem(shopItem)
     }
 }

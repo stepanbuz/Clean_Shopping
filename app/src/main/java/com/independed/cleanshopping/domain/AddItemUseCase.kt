@@ -1,7 +1,9 @@
 package com.independed.cleanshopping.domain
 
-class AddItemUseCase {
+import com.independed.cleanshopping.`interface`.ShoppingListRepository
+
+class AddItemUseCase(private val shoppingListRepository: ShoppingListRepository) {
     fun addElement(shopItem: ShopItem){
-        TODO()
+        shoppingListRepository.addElement(shopItem)
     }
 }
