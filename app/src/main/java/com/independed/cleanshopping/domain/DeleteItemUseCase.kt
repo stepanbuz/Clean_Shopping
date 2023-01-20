@@ -1,7 +1,9 @@
 package com.independed.cleanshopping.domain
 
-class DeleteItemUseCase {
+import com.independed.cleanshopping.`interface`.ShoppingListRepository
+
+class DeleteItemUseCase(private val shoppingListRepository: ShoppingListRepository) {
     fun deleteItem(shopItem: ShopItem){
-        TODO()
+        shoppingListRepository.deleteItem(shopItem)
     }
 }
