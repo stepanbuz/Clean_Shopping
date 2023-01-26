@@ -4,7 +4,7 @@ import com.independed.cleanshopping.`interface`.ShoppingListRepository
 
 class GetItemUseCase(private val shoppingListRepository: ShoppingListRepository) {
 
-    fun getItem(shopItem: ShopItem){
-        shoppingListRepository.getItem(shopItem)
+    fun getItem(shopItemId: Int):ShopItem{
+        return shoppingListRepository.getItem(shopItemId)
     }
 }
